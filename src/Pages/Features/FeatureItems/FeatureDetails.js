@@ -16,7 +16,7 @@ const FeatureDetails = () => {
     const handleOrderClose = () => setOpenOrder(false);
 
     useEffect(() => {
-        const url = `http://localhost:5000/products/${featureId}`;
+        const url = `https://hidden-taiga-98154.herokuapp.com/products/${featureId}`;
         fetch(url)
         .then ( res => res.json())
         .then ( data => setFeatureDetails(data));

@@ -13,14 +13,14 @@ function DashBoard() {
 
   const [itemOrder, setOrderItem] = useState([]);
   useEffect(() => {
-    const url = `http://localhost:5000/order?email=${user.email}`;
+    const url = `https://hidden-taiga-98154.herokuapp.com/order?email=${user.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setOrderItem(data));
   }, []);
 
   const handleDelete = email => {
-    const url = `http://localhost:5000/order?email=${email}`;
+    const url = `https://hidden-taiga-98154.herokuapp.com/order?email=${email}`;
     fetch(url, {
         method: 'DELETE'
     })

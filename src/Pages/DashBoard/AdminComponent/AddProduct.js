@@ -20,7 +20,7 @@ const AddProduct = () => {
         const productAdd = {
             ...addProduct
         }
-        fetch('http://localhost:5000/products', {
+        fetch('https://hidden-taiga-98154.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

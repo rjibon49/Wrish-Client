@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useOrderItems = () => {
     const [featureItem, setfeatureItem] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/order')
+        fetch('https://hidden-taiga-98154.herokuapp.com/order')
         .then ( res => res.json())
         .then ( data => setfeatureItem(data));
     },[])

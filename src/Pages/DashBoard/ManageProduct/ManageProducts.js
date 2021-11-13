@@ -18,13 +18,13 @@ const ManageProducts = () => {
     const handleOrderClose = () => setOpenOrder(false);
 
     useEffect(() => {
-      fetch('http://localhost:5000/products')
+      fetch('https://hidden-taiga-98154.herokuapp.com/products')
       .then ( res => res.json())
       .then ( data => setDataDelete(data));
   },[])
 
     const handleDelete = id => {
-      const url = `http://localhost:5000/products/${id}`;
+      const url = `https://hidden-taiga-98154.herokuapp.com/products/${id}`;
       fetch(url, {
           method: 'DELETE'
       })

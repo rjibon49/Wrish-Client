@@ -57,7 +57,7 @@ const FeatureModal = ({
       customerName: user.displayName
     }
     //Send Data to Server
-    fetch('http://localhost:5000/order', {
+    fetch('https://hidden-taiga-98154.herokuapp.com/order', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

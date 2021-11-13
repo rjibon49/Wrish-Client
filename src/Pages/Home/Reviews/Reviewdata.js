@@ -12,7 +12,7 @@ const Reviewdata = ({rd}) => {
 
     return (
         <Row className="my-5">
-            <Col xs={12} md={4} className="my-3 ">
+            <Col xs={12} md={3} className="my-3 ">
                 <div style={{backgroundColor:"#6e6a54",padding:"15px 0px", borderRadius:"10px" }}>
                     <div className="text-center text-white">
                         <h4>{userName}</h4>
