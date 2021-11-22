@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import useReviews from '../../../Hooks/useReviews';
 import Reviewdata from './Reviewdata';
 
@@ -9,6 +9,7 @@ const Reviews = () => {
 
     return (
         <Container>
+            <Row className="my-5">
             <h3 style={{fontFamily:"fantasy", fontSize:"2em", letterSpacing:"2px",textDecoration:"underline", marginBottom:"20px"}}>Customer Review</h3>
                 {
                     reviewsData.map(rd => <Reviewdata
@@ -16,6 +17,7 @@ const Reviews = () => {
                     rd={rd}
                     ></Reviewdata>)
                 }
+            </Row>
         </Container>
     );
 };
